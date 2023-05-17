@@ -1,0 +1,293 @@
+/* =
+
+    Theme Name: pro 
+    Theme Coder: Mohamed Sebai
+    psd Designer: Mohamed sebai
+
+ */
+
+*{
+    font-family: 'Segoe UI', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ /* Start  Header */
+
+.navbar{
+    background-color: #0e1338;
+    color: #fff;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+}
+.navbar .navbar-brand {
+    margin-left: 50px;
+    color: #fff;
+}
+@media (min-width: 992px){
+    .navbar .navbar-brand{
+        font-size: 22px;
+    }
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: 15px
+}
+.navbar .navbar-brand:hover{
+    color: #fff
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color: #fff;
+    transition: .4s;
+}
+    .navbar .collapse{
+        position: absolute;
+        right: 100px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    color: orange;
+}
+.navbar .navbar-nav .nav-item .nav-link.active{
+    color: orange
+}
+.navbar .navbar-brand {
+    margin-left: 50px;
+}
+.navbar .navbar-brand span{
+    color: orange;
+    font-weight: bold
+    
+}
+.navbar .navbar-toggler{
+    background-color: orange
+}
+
+.carousel .carousel-inner .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    
+}
+.carousel .carousel-inner .carousel-item img{
+    height: 605px;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption{
+    z-index: 1;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption .h2{
+    font-size: 40px;
+    letter-spacing: 1.3px;
+
+}
+@media (max-width: 557.98px){
+    .carousel .carousel-inner .carousel-item img{
+        height: 450px;
+    }
+}
+
+ /* End Header */
+
+
+
+/* Start What that */
+
+.what-that{
+    margin-top: 50px;
+}
+.what-that .card{
+    margin-bottom: 20px;
+}
+.what-that .card:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, .3);
+}
+.what-that .card:hover:before{
+    height: 100%;
+    transition: .4s;
+}
+
+/* End what that */
+   
+/* Start Features */
+
+.features{
+    margin-top: 50px;
+    padding-top: 40px;
+    background-color: #f1f1f1;
+    color: #fff;
+}
+
+.features .title{
+    margin-bottom: 50px;
+}
+.features .title h2{
+    padding: 20px 0;
+}
+.features .info p{
+    color: #ccc;
+}
+
+.features .info{
+    margin-bottom: 30px;
+    padding: 20px 20px 0 20px;
+    transition: .5s;
+}
+.features .info:hover{
+    color: #f1f1f1;
+    background-color: #23272b;
+}
+.features .info i{
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #f1f1f1;
+}
+/* End Features */
+    
+/* Start Skills */
+
+.skills{
+    background-color: #17191b;
+    margin-top: 50px;
+    padding-top: 50px;
+    color: #fff;
+}
+.skills .skill-change button{
+    margin-bottom: 30px;
+    width: 100%;
+    height: 45px;
+    line-height: 40px;
+    border: 1px solid orange;
+    border-right: 2px solid orange;
+    background-color: #23272b;
+    cursor: pointer;
+    transition: .3s;
+    outline: none;
+    color: #ccc;
+}
+.skills .skill-change button:first-child{
+    background-color: #000;
+    margin-top: 15px;
+}
+.skills .skill-change button:hover{
+    background-color: #000;
+}
+.skills .skill-info h3{
+    margin-bottom: 20px;
+}
+.skills .skill-info .title img{
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.skills .skill-info p{
+    color: #ccc;
+    padding-bottom: 50px;
+    line-height: 1.6;
+}
+.skills .hidden{
+    display: none;
+}
+
+/* End Skills */
+
+/* Start Our Work */
+
+.our-work{
+    background-color: #f1f1f1;
+    margin-top: 50px;
+    padding-top: 30px;
+    overflow: hidden;
+}
+.our-work .title p{
+    margin-bottom: 30px;
+}
+.our-work .row img{
+    border-left: 2px solid black;
+    margin-bottom: 40px;
+    height: 200px;
+}
+@media (max-width: 992.98px){
+    .our-work .row img{
+        margin-top: 40px;
+        border-top: 2px solid orange;
+        height: 500px;
+    }
+}
+.our-work .row .col-md-3{
+    margin-bottom: 30px;
+}
+
+/* End Our Work */
+
+/* Start contact us */
+.contact-us{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    background-color: #333;
+    color: #333;
+    font-size: 15px
+}
+.contact-us a i{
+    color: #fff;
+    margin-left: 20px;
+}
+.contact-us a i{
+    width: 50px;
+    height: 50px;
+    background-color: #385898;
+    line-height: 50px;
+    border-radius: 60%;
+    text-align: center;
+}
+.contact-us a  .fa-instagram{
+    color: orange
+}
+.contact-us a i:hover{
+    transform: scale(10px)
+}
+.contact-us .footer{
+    color: #f1f1f1;
+}
+.contact-us .footer p{
+    padding-top: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.contact-us .footer a{
+    margin-bottom: 0;
+    padding: 0;
+    cursor: none;
+    text-decoration: none;
+}
+.contact-us .footer a{
+    color: #f3f3f5;
+    margin-top: 0;
+}
+
+/* End contact us */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
